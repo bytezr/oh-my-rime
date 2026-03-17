@@ -255,8 +255,8 @@ speller:
     # - derive/([iu])ang$/$lan/ # iang => ian, uang => uan
     - derive/([aeiou])ng$/$1gn/        # dagn => dang
     - derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho => zhong|zhou
-    - derive/ong$/on/                  # zhonguo => zhong guo
-    - derive/un$/ong/                  # yuntong = yongtong
+    # - derive/ong$/on/                  # zhonguo => zhong guo
+    # - derive/un$/ong/                  # yuntong = yongtong
     ## 简拼
     - derive/^([zcs]h).+$/$1/        # 特别处理 zh, ch, sh 的首字母简写
     - abbrev/^([a-z]).+$/$1/         # 允许使用首字母作为缩写

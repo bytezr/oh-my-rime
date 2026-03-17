@@ -4,17 +4,17 @@ patch:
     Caps_Lock: noop
     Control_L: noop # 不做任何操作
     Control_R: noop # 不做任何操作
-    Shift_L: noop
+    Shift_L: commit_code
     Shift_R: noop
   "menu/page_size": 6
   schema_list:
     - { schema: rime_mint } # 薄荷拼音
     # - {schema: double_pinyin_flypy} # 小鹤双拼
-    - { schema: rime_mint_flypy } # 薄荷拼音-小鹤混输方案
+    # - { schema: rime_mint_flypy } # 薄荷拼音-小鹤混输方案
     # - { schema: terra_pinyin } # 地球拼音-薄荷定制
     # - {schema: wubi98_mint}         # 五笔98-薄荷简版
 
-  "switcher/caption": X
+  "switcher/caption": "🔤📝"
   "switcher/fold_options": true
   "switcher/hotkeys":
     - "Control+grave"
@@ -28,7 +28,7 @@ patch:
 
   "key_binder/bindings":
     - { when: always, accept: Control+Shift+1, select: .next } # 切换输入方案
-    - { when: always, accept: Control+Shift+2, toggle: noop } # 切换中/西文模式
+    - { when: always, accept: Control+Shift+2, toggle: commit_code } # 切换中/西文模式
     - { when: always, accept: Control+Shift+3, toggle: noop } # 切换全角/半角
     - { when: always, accept: Control+Shift+4, toggle: noop } # 切换简体/繁体
     - { when: always, accept: Control+Shift+5, toggle: noop } # 切换扩展字符
